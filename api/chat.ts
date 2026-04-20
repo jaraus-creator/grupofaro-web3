@@ -40,7 +40,6 @@ export async function POST(request: Request) {
     });`
 
 
-
     const reply =
       response?.text ?? "Lo siento, no pude responder en este momento.";
 
