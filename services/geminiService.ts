@@ -1,3 +1,16 @@
-export async function getGeminiResponse(_message: string): Promise<string> {
-  return "El chatbot está temporalmente en mantenimiento.";
+export async function getGeminiResponse(message: string): Promise<string> {
+  const response = await fetch("/api/chat", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ message }),
+  });
+
+  if (!response.ok) {
+    return "Lo siento, hubo un problema al conectar con el asistente.";
+  }
+
+  const data = await response.json();
+  return data.reply;
 }
