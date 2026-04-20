@@ -1,7 +1,7 @@
-import { GoogleGenAI } from "@google/genai";
+//import { GoogleGenAI } from "@google/genai";
 
 // Use the environment variable directly as specified in the guidelines
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+//const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const getGeminiResponse = async (userMessage: string): Promise<string> => {
   if (!process.env.API_KEY) {
@@ -9,9 +9,9 @@ export const getGeminiResponse = async (userMessage: string): Promise<string> =>
   }
 
   try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
-      contents: userMessage,
+    //const response = await ai.models.generateContent({
+     // model: 'gemini-3-flash-preview',
+      //contents: userMessage,
       config: {
         systemInstruction: `Eres un asistente virtual amable y profesional del 'Grupo Faro', una red de psicólogos y psiquiatras en Chile.
         Tu objetivo es responder preguntas generales sobre psicología, bienestar y explicar cómo funcionan los servicios terapéuticos.
@@ -26,7 +26,7 @@ export const getGeminiResponse = async (userMessage: string): Promise<string> =>
         Servicios de Grupo Faro: Atención presencial (Santiago) y online, adolescentes y adultos, psiquiatría y psicología.
         Contacto: Si el usuario pregunta por un teléfono o celular de contacto, entrégale el número: +56 9 93317706.`,
       }
-    });
+   // });
     
     return response.text || "Disculpa, no pude procesar tu respuesta.";
   } catch (error) {
