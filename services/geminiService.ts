@@ -7,10 +7,11 @@ export async function getGeminiResponse(message: string): Promise<string> {
     body: JSON.stringify({ message }),
   });
 
+  const data = await response.json().catch(() => ({}));
+
   if (!response.ok) {
-    return "Lo siento, hubo un problema al conectar con el asistente.";
+    return `Error del asistente: ${data?.error || "sin detalle"}`;
   }
 
-  const data = await response.json();
   return data.reply;
 }
