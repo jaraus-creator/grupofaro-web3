@@ -37,8 +37,7 @@ export async function POST(request: Request) {
         Servicios de Grupo Faro: Atención presencial (Santiago) y online, adolescentes y adultos, psiquiatría y psicología.
         Contacto: Si el usuario pregunta por un teléfono o celular de contacto, entrégale el número: +56 9 93317706.`,
       }
-    });`
-
+    });
 
     const reply =
       response?.text ?? "Lo siento, no pude responder en este momento.";
