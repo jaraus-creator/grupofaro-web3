@@ -10,9 +10,9 @@
 
 //  try {
     //const response = await ai.models.generateContent({
-     // model: 'gemini-3-flash-preview',
-      //contents: userMessage,
-      //config: {
+      model: 'gemini-3-flash-preview',
+      contents: userMessage,
+      config: {
         systemInstruction: `Eres un asistente virtual amable y profesional del 'Grupo Faro', una red de psicólogos y psiquiatras en Chile.
         Tu objetivo es responder preguntas generales sobre psicología, bienestar y explicar cómo funcionan los servicios terapéuticos.
         
