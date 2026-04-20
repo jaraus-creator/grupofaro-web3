@@ -3,16 +3,16 @@
 // Use the environment variable directly as specified in the guidelines
 //const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
-export const getGeminiResponse = async (userMessage: string): Promise<string> => {
-  if (!process.env.API_KEY) {
-    return "Lo siento, el servicio de asistente virtual no está configurado correctamente en este momento.";
-  }
+//export const getGeminiResponse = async (userMessage: string): Promise<string> => {
+//  if (!process.env.API_KEY) {
+//    return "Lo siento, el servicio de asistente virtual no está configurado correctamente en este momento.";
+//  }
 
-  try {
+//  try {
     //const response = await ai.models.generateContent({
      // model: 'gemini-3-flash-preview',
       //contents: userMessage,
-      config: {
+      //config: {
         systemInstruction: `Eres un asistente virtual amable y profesional del 'Grupo Faro', una red de psicólogos y psiquiatras en Chile.
         Tu objetivo es responder preguntas generales sobre psicología, bienestar y explicar cómo funcionan los servicios terapéuticos.
         
@@ -32,5 +32,5 @@ export const getGeminiResponse = async (userMessage: string): Promise<string> =>
   } catch (error) {
     console.error("Error calling Gemini:", error);
     return "Lo siento, hubo un error al conectar con el asistente. Por favor intenta más tarde.";
-  }
-};
+//  }
+//};
