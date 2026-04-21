@@ -238,7 +238,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <li>• Siegel, D. J. (2007). La mente en desarrollo.</li>
         <li>• Steinberg, L. (2014). Age of opportunity: Lessons from the new science of adolescence.</li>
         <li>• UNICEF (2011). La adolescencia: una etapa fundamental del desarrollo.</li>
-        <li>• OMS (2022). World mental health report.</li>
+        <li>• OMS (2022). Informe mundial sobre salud mental.</li>
       </ul>
     `,
     date: 'Enero 2026',
