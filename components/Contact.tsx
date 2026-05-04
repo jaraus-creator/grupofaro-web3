@@ -1,9 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Contact: React.FC = () => {
   const { ref, isVisible } = useScrollReveal();
+
+  const [formData, setFormData] = useState({
+    nombre: '',
+    telefono: '',
+    email: '',
+    motivo: '',
+    mensaje: '',
+  });
+
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Error al enviar formulario');
+      }
+
+      setStatus('success');
+      setFormData({
+        nombre: '',
+        telefono: '',
+        email: '',
+        motivo: '',
+        mensaje: '',
+      });
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    }
+  };
 
   return (
     <section 
@@ -14,7 +64,6 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16">
           
-          {/* Contact Info */}
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
@@ -61,29 +110,62 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Form */}
           <div className="bg-white rounded-2xl p-8 text-slate-700 shadow-2xl">
             <h3 className="text-2xl font-bold text-slate-800 mb-6">Envíanos un mensaje</h3>
-            <form className="space-y-5">
+
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-5">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-600 mb-1">Nombre</label>
-                  <input type="text" id="name" className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50" placeholder="Tu nombre" />
+                  <input
+                    type="text"
+                    id="name"
+                    name="nombre"
+                    value={formData.nombre}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50"
+                    placeholder="Tu nombre"
+                  />
                 </div>
+
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-slate-600 mb-1">Teléfono</label>
-                  <input type="tel" id="phone" className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50" placeholder="+56 9..." />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="telefono"
+                    value={formData.telefono}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50"
+                    placeholder="+56 9..."
+                  />
                 </div>
               </div>
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-slate-600 mb-1">Correo Electrónico</label>
-                <input type="email" id="email" className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50" placeholder="tucorreo@ejemplo.com" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50"
+                  placeholder="tucorreo@ejemplo.com"
+                />
               </div>
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-slate-600 mb-1">Motivo de consulta</label>
-                <select id="subject" className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50">
+                <select
+                  id="subject"
+                  name="motivo"
+                  value={formData.motivo}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50"
+                >
                   <option value="">Selecciona una opción</option>
                   <option value="consulta">Agendar primera consulta</option>
                   <option value="duda">Pregunta general</option>
@@ -93,12 +175,36 @@ const Contact: React.FC = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-600 mb-1">Mensaje</label>
-                <textarea id="message" rows={4} className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50" placeholder="¿En qué podemos ayudarte?"></textarea>
+                <textarea
+                  id="message"
+                  name="mensaje"
+                  rows={4}
+                  value={formData.mensaje}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-faro-500 focus:border-transparent outline-none bg-slate-50"
+                  placeholder="¿En qué podemos ayudarte?"
+                />
               </div>
 
-              <button type="submit" className="w-full bg-faro-600 text-white font-bold py-4 rounded-lg hover:bg-faro-700 transition-colors shadow-lg shadow-faro-600/20">
-                Enviar Mensaje
+              <button
+                type="submit"
+                disabled={status === 'sending'}
+                className="w-full bg-faro-600 text-white font-bold py-4 rounded-lg hover:bg-faro-700 transition-colors shadow-lg shadow-faro-600/20 disabled:opacity-60"
+              >
+                {status === 'sending' ? 'Enviando...' : 'Enviar Mensaje'}
               </button>
+
+              {status === 'success' && (
+                <p className="text-green-600 text-sm font-medium">
+                  Mensaje enviado correctamente. Te contactaremos pronto.
+                </p>
+              )}
+
+              {status === 'error' && (
+                <p className="text-red-600 text-sm font-medium">
+                  No se pudo enviar el mensaje. Intenta nuevamente.
+                </p>
+              )}
             </form>
           </div>
 
