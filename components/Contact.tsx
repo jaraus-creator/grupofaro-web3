@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
           <div className="bg-white rounded-2xl p-8 text-slate-700 shadow-2xl">
             <h3 className="text-2xl font-bold text-slate-800 mb-6">Envíanos un mensaje</h3>
 
-            <form className="space-y-5" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid md:grid-cols-2 gap-5">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-600 mb-1">Nombre</label>
