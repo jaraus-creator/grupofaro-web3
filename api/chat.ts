@@ -41,7 +41,11 @@ export async function POST(request: Request) {
 
     const reply =
       response?.text ?? "Lo siento, no pude responder en este momento.";
-
+await db.collection("chat_logs").add({
+  userMessage: message,
+  botReply: reply,
+  createdAt: admin.firestore.FieldValue.serverTimestamp(),
+});
     return Response.json({ reply }, { status: 200 });
   } catch (error: any) {
     console.error("Error en /api/chat:", error);
