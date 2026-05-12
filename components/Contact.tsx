@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
                   <Phone className="text-faro-300" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">Teléfono / WhatsApp</h4>
+                  <h4 className="font-semibold text-lg">WhatsApp</h4>
                   <p className="text-faro-200">+56 9 93317706</p>
                   <p className="text-xs text-faro-400 mt-1">Lunes a Viernes 09:00 - 19:00</p>
                 </div>
