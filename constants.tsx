@@ -344,7 +344,7 @@ export const BLOG_POSTS: BlogPost[] = [
 export const FAQS: FAQItem[] = [
   {
     question: "¿Cómo puedo agendar una primera cita?",
-    answer: "Puedes agendar tu hora directamente a través de nuestro formulario de contacto en esta página, llamando a nuestro teléfono o escribiéndonos por WhatsApp. Nuestro equipo de recepción te ayudará a encontrar el profesional más adecuado para tus necesidades."
+    answer: "Puedes agendar tu hora directamente a través de nuestro formulario de contacto en esta página, o escribiéndonos directamente por WhatsApp a +56993317706. Nuestro equipo de recepción te ayudará a encontrar el profesional más adecuado para tus necesidades."
   },
   {
     question: "¿Atienden por Fonasa o Isapre?",
