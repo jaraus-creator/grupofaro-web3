@@ -141,39 +141,80 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h3>Estrategias de manejo: más allá de lo evidente</h3>
       <p>Las estrategias clásicas siguen siendo válidas, pero es importante comprender por qué funcionan:</p>
-      <ol>
-        <li><strong>Atención plena (Mindfulness):</strong> No es solo “relajarse”. La práctica de mindfulness ha demostrado modificar la conectividad entre la amígdala y la corteza prefrontal, favoreciendo una mejor regulación emocional (Hölzel et al., 2011).</li>
-        <li><strong>Higiene del sueño:</strong> El sueño regula directamente el sistema emocional. La privación de sueño aumenta la reactividad de la amígdala hasta en un 60% (Walker & van der Helm, 2009).</li>
-        <li><strong>Límites digitales:</strong> Reducir la exposición no es desconectarse del mundo, sino recuperar espacios de regulación.</li>
-        <li><strong>Actividad física:</strong> El ejercicio regular tiene efectos neuroquímicos directos: aumenta la liberación de endorfinas, serotonina y BDNF, favoreciendo la resiliencia al estrés (Ratey & Loehr, 2011).</li>
-      </ol>
+      
+      <h4>Atención plena (Mindfulness)</h4>
+      <p>No es solo “relajarse”. La práctica de mindfulness ha demostrado modificar la conectividad entre la amígdala y la corteza prefrontal, favoreciendo una mejor regulación emocional (Hölzel et al., 2011). Disminuye la reactividad automática y permite observar los pensamientos sin quedar atrapado en ellos.</p>
+      
+      <h4>Higiene del sueño</h4>
+      <p>El sueño regula directamente el sistema emocional. La privación de sueño aumenta la reactividad de la amígdala hasta en un 60% (Walker & van der Helm, 2009). Dormir mal no solo cansa: desregula emocionalmente.</p>
+      
+      <h4>Límites digitales</h4>
+      <p>Reducir la exposición no es desconectarse del mundo, sino recuperar espacios de regulación. Establecer “zonas libres de pantalla” permite que el sistema nervioso salga del estado de alerta constante.</p>
+      
+      <h4>Actividad física</h4>
+      <p>El ejercicio regular no solo mejora el estado de ánimo, sino que tiene efectos neuroquímicos directos: aumenta la liberación de endorfinas, serotonina y BDNF (factor neurotrófico derivado del cerebro), lo que favorece la plasticidad neuronal y la resiliencia al estrés (Ratey & Loehr, 2011).</p>
 
       <h3>Intervenciones psicológicas</h3>
-      <p>La terapia cognitivo-conductual (TCC) sigue siendo uno de los tratamientos con mayor respaldo empírico, pero reducir la ansiedad únicamente a un problema de “pensamientos irracionales” puede resultar limitado.</p>
-      <p>Desde una mirada clínica más amplia, la ansiedad es una expresión de organización psíquica. En enfoques psicodinámicos y relacionales, se comprende como una señal de desregulación en el sistema self–otro (Bromberg, 2011). Por su parte, enfoques basados en la mentalización (Fonagy et al., 2002) plantean que la ansiedad se intensifica cuando se pierde la capacidad de comprender los propios estados mentales.</p>
-      <p>En síntesis, las intervenciones efectivas suelen compartir elementos clave: comprensión del sentido del síntoma, desarrollo de capacidades de autorregulación, trabajo sobre patrones relacionales y generación de nuevas experiencias emocionales seguras.</p>
+      <p>La terapia cognitivo-conductual (TCC) sigue siendo uno de los tratamientos con mayor respaldo empírico para los trastornos de ansiedad, especialmente por su foco en la identificación y modificación de patrones de pensamiento disfuncionales, exposición progresiva y entrenamiento en habilidades de regulación (Craske et al., 2014). Sin embargo, reducir la ansiedad únicamente a un problema de “pensamientos irracionales” puede resultar limitado para comprender su complejidad.</p>
+      <p>Desde una mirada clínica más amplia, la ansiedad no es solo un sistema a eliminar, sino una expresión de organización psíquica. Muchas veces, lo que aparece como ansiedad es la manifestación visible de procesos más profundos: conflictos intrapsíquicos, experiencias relacionales tempranas no elaboradas, dificultades en la regulación emocional o amenazas percibidas en los vínculos significativos.</p>
+      <p>En enfoques psicodinámicos y psicoanalíticos contemporáneos —especialmente desde el psicoanálisis relacional— la ansiedad se comprende como una señal de desregulación en el sistema self–otro, donde emergen temores asociados a la pérdida, el rechazo, la invasión o la desintegración del sí mismo (Bromberg, 2011). En este sentido, no se trata solo de “regular síntomas”, sino de comprender qué está intentando comunicar la ansiedad.</p>
+      <p>Por su parte, enfoques basados en la mentalización (Fonagy et al., 2002) plantean que la ansiedad puede intensificarse cuando la persona pierde la capacidad de comprender sus propios estados mentales y los de otros, especialmente en contextos de estrés interpersonal. Aquí, el trabajo terapéutico apunta a restaurar esa capacidad reflexiva, generando mayor coherencia interna.</p>
+      <p>Desde modelos sistémicos, la ansiedad también puede entenderse como un fenómeno que no reside únicamente en el individuo, sino en patrones relacionales más amplios. En estos casos, el síntoma cumple una función dentro del sistema (familiar, de pareja o incluso organizacional), y su abordaje implica mirar esas dinámicas.</p>
+      <p>Incluso desde la neurociencia interpersonal, se ha planteado que la regulación emocional es, en gran medida, un proceso co-construido en vínculo. La terapia, entonces, no solo entrega herramientas, sino que ofrece una experiencia relacional correctiva, donde el sistema nervioso puede reorganizarse en un contexto de seguridad (Siegel, 2012).</p>
+      
+      <p>En síntesis, más allá del enfoque específico, las intervenciones psicológicas efectivas en ansiedad suelen compartir elementos clave:</p>
+      <ul>
+        <li>Comprensión del sentido del síntoma (no solo su reducción).</li>
+        <li>Desarrollo de capacidades de autorregulación.</li>
+        <li>Trabajo sobre patrones relacionales.</li>
+        <li>Generación de nuevas experiencias emocionales en un contexto terapéutico seguro.</li>
+      </ul>
 
       <h3>Tratamiento farmacológico (cuando corresponde)</h3>
-      <p>En cuadros moderados a severos, el tratamiento farmacológico puede ser una herramienta relevante. Los ISRS (sertralina, escitalopram, etc.) constituyen la primera línea. Sin embargo, es crítico advertir sobre el riesgo del uso indiscriminado de benzodiacepinas por su riesgo de dependencia (Lader, 2011).</p>
-      <p>Los fármacos modulan las manifestaciones neuroquímicas, pero no resuelven el origen. Su mayor efectividad se observa cuando se integran con psicoterapia bajo supervisión médica.</p>
+      <p>En cuadros de ansiedad moderada a severa, o cuando la sintomatología interfiere significativamente con el funcionamiento diario, el tratamiento farmacológico puede ser una herramienta relevante. Los inhibidores selectivos de la recaptación de serotonina (ISRS) —como sertralina, escitalopram o fluoxetina— constituyen el tratamiento de primera línea, debido a su eficacia y perfil de seguridad (Bandelow et al., 2017).</p>
+      <p>Sin embargo, no son la única alternativa. También se utilizan:</p>
+      <ul>
+        <li>Inhibidores de la recaptación de serotonina y noradrenalina (IRSN), como venlafaxina o duloxetina, especialmente en trastornos de ansiedad generalizada.</li>
+        <li>Benzodiacepinas (como clonazepam o alprazolam), que tienen un efecto ansiolítico rápido, pero conllevan riesgos importantes de tolerancia, dependencia y síndrome de abstinencia.</li>
+        <li>Otros fármacos como pregabalina o ciertos antipsicóticos en dosis bajas, en casos específicos y bajo supervisión médica.</li>
+      </ul>
+      <p>Un punto crítico —y muchas veces invisibilizado— es el riesgo del uso indiscriminado de ansiolíticos, particularmente benzodiacepinas. Su uso prolongado puede generar dependencia física y psicológica, deterioro cognitivo y dificultades en la regulación emocional a largo plazo (Lader, 2011). En la práctica clínica, no es infrecuente encontrar personas que, intentando aliviar la ansiedad, terminan atrapadas en un circuito de consumo que perpetúa el problema.</p>
+      <p>Además, es importante comprender que los fármacos no resuelven el origen de la ansiedad, sino que modulan sus manifestaciones neuroquímicas. Pueden ser fundamentales para estabilizar el sistema nervioso —especialmente en momentos de crisis—, pero su mayor efectividad se observa cuando se integran en un abordaje más amplio que incluya psicoterapia.</p>
+      
+      <p>Desde una perspectiva clínica responsable, el tratamiento farmacológico debiese:</p>
+      <ul>
+        <li>Ser indicado y supervisado por un médico (idealmente psiquiatra).</li>
+        <li>Tener objetivos claros (síntoma, duración, seguimiento).</li>
+        <li>Ser revisado periódicamente.</li>
+        <li>Integrarse con intervención psicológica.</li>
+      </ul>
+      <p>En otras palabras, los fármacos pueden ser un soporte valioso, pero no sustituyen el proceso de comprensión y transformación que ocurre en el espacio terapéutico.</p>
 
       <h3>Una distinción clave: ansiedad adaptativa vs. ansiedad desbordada</h3>
-      <p>No toda ansiedad es negativa; es necesaria para movilizarnos. El problema es cuando deja de ser una señal y se convierte en un estado permanente, donde el cuerpo funciona como si estuviera en peligro sin estarlo.</p>
-
-      <h3>Cierre</h3>
-      <p>Gestionar la ansiedad hoy no implica eliminarla, sino aprender a relacionarnos con ella de manera distinta. Cuando interfiere con la vida cotidiana, no es debilidad: es una señal de que el sistema necesita apoyo.</p>
+      <p>No toda ansiedad es negativa. De hecho, es necesaria. Nos moviliza, nos alerta, nos prepara. El problema es cuando deja de ser una señal y se convierte en un estado permanente.</p>
+      <p>Ahí es donde muchas personas quedan atrapadas: no están en peligro, pero su cuerpo y su mente funcionan como si lo estuvieran.</p>
+      
+      <p>Gestionar la ansiedad en tiempos modernos no implica eliminarla, sino aprender a relacionarnos con ella de manera distinta. Entenderla, reconocerla y regularla.</p>
+      <p>Y, sobre todo, dejar de normalizar el malestar constante como si fuera el precio inevitable de vivir hoy.</p>
+      <p>Cuando la ansiedad interfiere con la vida cotidiana, no es un signo de debilidad: es una señal de que el sistema necesita apoyo. Y ahí, el trabajo terapéutico no solo alivia, sino que transforma.</p>
 
       <hr class="my-8 border-slate-200" />
       
       <h3 class="text-lg font-bold mb-4">Referencias</h3>
-      <ul class="text-sm text-slate-500 list-none pl-0">
-        <li>• Bandelow, B., et al. (2017). Treatment of anxiety disorders. Dialogues in Clinical Neuroscience.</li>
-        <li>• Bromberg, P. M. (2011). La sombra del tsunami y el desarrollo de la mente relacional.</li>
-        <li>• Craske, M. G., et al. (2014). Maximizing exposure therapy. Behaviour Research and Therapy.</li>
-        <li>• Fonagy, P., et al. (2002). Affect regulation, mentalization, and the development of the self.</li>
-        <li>• Keles, B., et al. (2020). Influence of social media on depression and anxiety.</li>
-        <li>• Walker, M. P., & van der Helm, E. (2009). Overnight therapy? The role of sleep.</li>
-        <li>• OMS (2022). Informe mundial sobre salud mental.</li>
+      <ul class="text-sm text-slate-500 list-none pl-0 space-y-2">
+        <li>• Bandelow, B., Michaelis, S., & Wedekind, D. (2017). Treatment of anxiety disorders. Dialogues in Clinical Neuroscience, 19(2), 93–107.</li>
+        <li>• Bromberg, P. M. (2011). La sombra del tsunami y el desarrollo de la mente relacional. Ágora Relacional.</li>
+        <li>• Craske, M. G., Treanor, M., Conway, C. C., Zbozinek, T., & Vervliet, B. (2014). Maximizing exposure therapy: An inhibitory learning approach. Behaviour Research and Therapy, 58, 10–23.</li>
+        <li>• Fonagy, P., Gergely, G., Jurist, E. L., & Target, M. (2002). Affect regulation, mentalization, and the development of the self. Other Press.</li>
+        <li>• Etkin, A., & Wager, T. D. (2007). Functional neuroimaging of anxiety: A meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia. American Journal of Psychiatry, 164(10), 1476–1488.</li>
+        <li>• Hölzel, B. K., Lazar, S. W., Gard, T., Schuman-Olivier, Z., Vago, D. R., & Ott, U. (2011). How does mindfulness meditation work? Proposing mechanisms of action from a conceptual and neural perspective. Perspectives on Psychological Science, 6(6), 537–559.</li>
+        <li>• Keles, B., McCrae, N., & Grealish, A. (2020). A systematic review: The influence of social media on depression, anxiety and psychological distress in adolescents. International Journal of Adolescence and Youth, 25(1), 79–93.</li>
+        <li>• Lader, M. (2011). Benzodiazepines revisited—Will we ever learn? Addiction, 106(12), 2086–2109.</li>
+        <li>• Ratey, J. J., & Loehr, J. E. (2011). The positive impact of physical activity on cognition during adulthood: A review of underlying mechanisms, evidence and recommendations. Reviews in the Neurosciences, 22(2), 171–185.</li>
+        <li>• Siegel, D. J. (2007). La mente en desarrollo. Cómo interactúan las relaciones y el cerebro para modelar nuestro ser. Desclée de Brouwer.</li>
+        <li>• Twenge, J. M., Joiner, T. E., Rogers, M. L., & Martin, G. N. (2018). Increases in depressive symptoms, suicide-related outcomes, and suicide rates among U.S. adolescents after 2010 and links to increased new media screen time. Clinical Psychological Science, 6(1), 3–17.</li>
+        <li>• Walker, M. P., & van der Helm, E. (2009). Overnight therapy? The role of sleep in emotional brain processing. Current Biology, 19(23), R105–R107.</li>
+        <li>• Organización Mundial de la Salud. (2022). Informe mundial sobre salud mental: Transformar la salud mental para todos. OMS.</li>
       </ul>
     `,
     date: 'Noviembre 2025',
@@ -238,7 +279,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <li>• Siegel, D. J. (2007). La mente en desarrollo.</li>
         <li>• Steinberg, L. (2014). Age of opportunity: Lessons from the new science of adolescence.</li>
         <li>• UNICEF (2011). La adolescencia: una etapa fundamental del desarrollo.</li>
-        <li>• OMS (2022). Informe mundial sobre salud mental.</li>
+        <li>• OMS (2022). World mental health report.</li>
       </ul>
     `,
     date: 'Enero 2026',
@@ -300,7 +341,6 @@ export const BLOG_POSTS: BlogPost[] = [
     imageUrl: 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
   }
 ];
-
 export const FAQS: FAQItem[] = [
   {
     question: "¿Cómo puedo agendar una primera cita?",
